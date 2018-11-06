@@ -1,4 +1,8 @@
-vendor/
-report/*
-Resources/doc/_build/
+/build
+/docs/_build
+/vendor
+.php_cs.cache
 composer.lock
+phpunit.xml
+tests/Resources/app/cache/
+tests/Resources/app/logs/

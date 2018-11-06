@@ -1,5 +1,41 @@
-Changelog
-=========
+# Change Log
+All notable changes to this project will be documented in this file.
+This project adheres to [Semantic Versioning](http://semver.org/).
+
+## [2.1.1](https://github.com/sonata-project/SonataDoctrinePhpcrAdminBundle/compare/2.1.0...2.1.1) - 2018-02-08
+### Changed
+- Switch all templates references to Twig namespaced syntax
+- Switch from templating service to sonata.templating
+
+## [2.1.0](https://github.com/sonata-project/SonataDoctrinePhpcrAdminBundle/compare/2.0.0...2.1.0) - 2018-01-08
+### Added
+- version 2.0 for `phpcr-odm`
+
+### Removed
+- Support for old versions of PHP and Symfony.
+
+### Fixed
+- Missing root_node parameter in cmfTree options
+
+###### Starting this point, the changelog does not follow the same way.
+
+2.0.0
+-----
+
+* **2017-04-26**: [BC break] The tree routing is no longer optional. Require `@SonataDoctrinePhpcrAdminBundle/Resources/config/routing/tree.xml` in your routing file.
+* **2017-02-06**: [BC break] Removed `Datagrid\SimplePager` in favor of the one provided by the SonataAdminBundle.
+* **2015-05-06**: [BC break] Removed `Tree\PhpcrOdmTree`.
+* **2015-05-06**: [BC break] Changed first argument of `Controller\TreeController` from `TreeInterface $tree` to `$repositoryName = 'default'`.
+* **2015-05-06**: [BC break] The tree block template now only recieves a `repository_name`, `root_node` and `routing_defaults` variables.
+* **2015-05-06**: Added `document_tree_repository` setting.
+* **2015-05-06**: [BC break] Removed `Form\Type\TreeModelType#setTree()` method and `$tree` property.
+
+1.2.0
+-----
+
+* **2014-10-22**: Updated the template `Block/tree.html.twig`, parameters are now wrapped in `settings`.
+* **2014-10-13**: Fixed things around showing relations
+* **2014-09-29**: Now compatible with sonata admin 2.3
 
 1.2.0-RC1
 ---------
